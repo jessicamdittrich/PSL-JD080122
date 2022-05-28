@@ -59,6 +59,10 @@ body {
     margin: 10px 0 10px 0;
 }
 
+#navigation ul {
+    padding: 0;
+}
+
 #navigation ul li {
     padding: 0 5px;
     font-style: italic;
@@ -94,8 +98,8 @@ body {
     text-align: center;
     width: 300px;
     height: 300px;
-    background-color: rgba(255, 249, 222, .8);
-    box-shadow: 2px 2px black;
+    background-color: rgba(255, 249, 222, .98);
+    box-shadow: 10px 10px black;
     z-index: 200;
 }
 
@@ -130,8 +134,32 @@ body {
 }
 
 /* INDIVIDUAL CARDS */
-#card-one {
+#card-about {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    left: 25%;
     top: 1000px;
+    padding: 25px;
+    z-index: 500;
+}
+
+#card-about #photo-jess{
+    max-width: 25%;
+    border: 6px solid black;
+    border-radius: 50%;
+}
+
+#card-about #photo-jess:hover {
+    cursor: url(../images/cursor-hi.png), pointer;
+}
+
+#card-about p {
+    text-align: justify;
+}
+
+#card-one {
+    top: 1500px;
     left: 13%;
 }
 
@@ -143,9 +171,32 @@ body {
     top: 0;
     left: 0;
     padding: 5px;
+    text-align: right;
     background-color: black;
-    color: white;
     z-index: 500;
+}
+
+#indv-nav ul {
+    padding: 0 25px 0 0;
+    margin: 5px;
+}
+
+#indv-nav ul li {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline;
+    padding: 0 10px;
+    list-style: none;
+}
+
+#indv-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#indv-nav ul li a:hover{
+    font-style: italic;
 }
 
 #indv-work {
@@ -164,4 +215,10 @@ body {
     text-transform: uppercase;
     text-shadow: 6px 6px whitesmoke;
     letter-spacing: 3px;
+}
+
+#indv-work #indv-text {
+    width: 60%;
+    margin: auto;
+    text-align: justify;
 }
