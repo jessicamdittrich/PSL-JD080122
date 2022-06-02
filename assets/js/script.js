@@ -1,5 +1,3 @@
-
-
 // BLINKING SCROLL
 var blinkingScroll = setInterval(function () {
     var scrollElement = document.getElementById('scroll');
