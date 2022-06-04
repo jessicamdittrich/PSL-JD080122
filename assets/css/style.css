@@ -186,6 +186,7 @@ body {
 .cards img {
     margin-top: 20px;
     max-width: 300px;
+    user-select: none;
 }
 
 .cards ul {
@@ -340,3 +341,69 @@ body {
 #indv-work #indv-photos img {
     width: 100%;
 }
+
+/* MEDIA QUERIES */
+
+    /* LARGE SMARTPHONES */
+    @media screen and (max-width: 768px) {
+        #navigation {
+            height: 70%;
+            top: 15%;
+        }
+
+        #navigation h1{
+            font-size: 120px;
+        }
+        
+        #navigation p {
+            font-size: 14px;
+        }
+        
+        #navigation ul {
+            margin-top: 50px;
+            padding: 0;
+        }
+        
+        #navigation ul li {
+            margin: 20px 0;
+            display: block;
+        }
+        
+        #navigation ul li a{
+            font-size: 14px;
+        }
+        
+        #navigation ul li a:hover{
+            font-style: normal;
+            color: black;
+        }
+
+        .cards {
+            width: 80%;
+            height: 80%;
+        }
+
+        .cards img {
+            max-width: 100%;
+        }
+
+        #card-about {
+            width: 80%;
+            left: 5.5%;
+        }
+
+        #card-one, #card-two, #card-three, #card-four, #card-five {
+            left: 6.25%;
+        }
+
+        #text-intro {
+            top: 2000px;
+            width: 80%;
+            left: 10%;
+        }
+        
+        #text-goodbye {
+            width: 80%;
+            left: 10%;
+        }
+    }
