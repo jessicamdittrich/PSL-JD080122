@@ -43,7 +43,7 @@ body {
     z-index: 100;
 }
 
-#navigation h1{
+#navigation h1 {
     margin: auto;
     font-family: var(--mainfont);
     font-weight: 100;
@@ -169,7 +169,7 @@ body {
 }
 
 .cards h3, #text-intro h3, #text-goodbye h3 {
-    margin: 20px 0 15px 0;
+    margin: 20px 0 20px 0;
     font-size: 24px;
     letter-spacing: 3px;
     text-transform: uppercase;
@@ -180,7 +180,9 @@ body {
     margin: 0;
     font-size: 10px;
     font-weight: 500;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 20px;
 }
 
 .cards img {
@@ -302,7 +304,7 @@ body {
 #indv-work {
     position: absolute;
     width: 80%;
-    height: 500%;
+    height: contain;
     top: 5%;
     left: 10%;
     text-align: center;
@@ -324,6 +326,21 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+#indv-work h6 a {
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    display: none;
+}
+
+#indv-work h6 a:hover {
+    color: white;
+    font-style: normal;
 }
 
 #indv-work #indv-text {
@@ -340,6 +357,12 @@ body {
 
 #indv-work #indv-photos img {
     width: 100%;
+    margin-top: 25px;
+}
+
+#indv-work #indiv-photos iframe {
+    width: 100%;
+    margin-top: 25px !important;
 }
 
 /* MEDIA QUERIES */
