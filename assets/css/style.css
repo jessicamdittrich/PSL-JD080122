@@ -21,9 +21,16 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
+    text-align: center;
     top: 0;
     left: 0;
     z-index: 0;
+    /* BACKGROUND IMAGE MOVEMENT */
+    background-image: url("../images/background-img.png");
+    background-size: 200%;
+    --x: 0px;
+    --y: 0px;
+    background-position: var(--x) var(--y);
 }
 
 #background img{
@@ -31,6 +38,11 @@ body {
     min-height: 100%
 }
 
+/* MOBILE PAGE */
+#mobile-page {
+    position: fixed;
+    z-index: 0;
+}
 
 /* NAVIGATION */
 #navigation {
@@ -93,33 +105,6 @@ body {
     margin-top: 50px;
 }
 
-/* HIDDEN NAVIGATION */
-#hidden-navigation {
-    position: fixed;
-    height: 30%;
-    top: 30%;
-    right: 10px;
-    padding: 10px;
-    background-color: rgba(255, 249, 222, .98);
-    box-shadow: 10px 10px black;
-    z-index: 200;
-    display:none;
-}
-
-#hidden-navigation ul {
-    padding: 0;
-}
-
-#hidden-navigation ul li {
-    list-style: none;
-    margin: 20px 0;
-}
-
-#hidden-navigation ul li a {
-    color: black;
-    text-decoration: none;
-}
-
 /* TEXT INTRO */
 #text-intro {
     position: absolute;
@@ -128,7 +113,7 @@ body {
     left: 32.5%;
     padding: 10px 0 5px 0;
     text-align: center;
-    background-color: rgba(255, 249, 222, .98);
+    background-color: rgba(255, 249, 222, .95);
     box-shadow: 10px 10px black;
     z-index: 200;
     user-select: none;
@@ -141,7 +126,7 @@ body {
     left: 32.5%;
     padding: 0 0 5px 0;
     text-align: center;
-    background-color: rgba(255, 249, 222, .98);
+    background-color: rgba(255, 249, 222, .95);
     box-shadow: 10px 10px black;
     z-index: 200;
     user-select: none;
@@ -163,7 +148,7 @@ body {
     width: 350px;
     height: 400px;
     padding: 20px;
-    background-color: rgba(255, 249, 222, .98);
+    background-color: rgba(255, 249, 222, .95);
     box-shadow: 10px 10px black;
     z-index: 200;
 }
@@ -365,68 +350,97 @@ body {
     margin-top: 25px !important;
 }
 
-/* MEDIA QUERIES */
+/* MOBILE PHONE */
 
-    /* LARGE SMARTPHONES */
     @media screen and (max-width: 768px) {
-        #navigation {
-            height: 70%;
-            top: 15%;
+        
+        #mobile-page {
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            z-index: 1000;
         }
 
-        #navigation h1{
-            font-size: 120px;
+        #mobile-background {
+            position: fixed;
+            min-width: 100%;
+            min-height: 100%;
+            top: 0;
+            right: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            z-index: 1001;
         }
-        
-        #navigation p {
-            font-size: 14px;
+
+        #mobile-content {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 2.5% 5%;
+            font-family: var(--mainfont);
+            font-size: 80px;
+            color: black;
+            z-index: 1002;
         }
-        
-        #navigation ul {
-            margin-top: 50px;
+
+        #mobile-menu {
+            position: fixed;
+            width: 100%;
+            height: 50px;
+            top: 0;
+            right: 0;
+            text-align: center;
+            background-color: black;
+            z-index: 1003;
+        }
+
+        #mobile-menu button {
+            margin-top: 14px;
+            font-family: var(--secondfont);
+            font-size: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            background: black;
+            border: none;
+        }
+
+        #mobile-menu #mobile-main-nav {
+            display: none;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            margin: 0;
+            padding: 0 0 20px 0;
+            background-color: black;
+            z-index: 1005;
+        }
+
+        #mobile-menu #mobile-main-nav .mobile-secondary-nav {
+            margin: 20px 0 0 0;
             padding: 0;
         }
-        
-        #navigation ul li {
-            margin: 20px 0;
-            display: block;
-        }
-        
-        #navigation ul li a{
-            font-size: 14px;
-        }
-        
-        #navigation ul li a:hover{
-            font-style: normal;
-            color: black;
+
+        #mobile-menu ul li {
+            padding: 20px;
         }
 
-        .cards {
-            width: 80%;
-            height: 80%;
+        #mobile-menu ul li a {
+            font-size: 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
         }
 
-        .cards img {
-            max-width: 100%;
+        #mobile-menu #mobile-main-nav .mobile-secondary-nav a {
+            font-size: 20px;
+            font-style: italic;
+            letter-spacing: 2px;
         }
 
-        #card-about {
-            width: 80%;
-            left: 5.5%;
+        #mobile-menu #mobile-main-nav #mobile-portfolio-nav, #mobile-menu #mobile-main-nav #mobile-social-nav {
+            display: none;
         }
 
-        #card-one, #card-two, #card-three, #card-four, #card-five {
-            left: 6.25%;
-        }
-
-        #text-intro {
-            top: 2000px;
-            width: 80%;
-            left: 10%;
-        }
-        
-        #text-goodbye {
-            width: 80%;
-            left: 10%;
-        }
     }
