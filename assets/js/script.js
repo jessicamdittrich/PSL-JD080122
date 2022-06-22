@@ -8,9 +8,9 @@ var blinkingScroll = setInterval(function () {
 // BACKGROUND IMAGE MOVEMENT
 const el = document.querySelector("#background");
 
-el.addEventListener("mousemove", (e) => {
-  el.style.setProperty("--x", -e.offsetX + "px");
-  el.style.setProperty("--y", -e.offsetY + "px");
+el.addEventListener("mousemove", (move) => {
+  el.style.setProperty("--x", -move.offsetX + "px");
+  el.style.setProperty("--y", -move.offsetY + "px");
 });
 
 // MOBILE TOGGLE

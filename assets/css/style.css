@@ -33,15 +33,9 @@ body {
     background-position: var(--x) var(--y);
 }
 
-#background img{
-    min-width: 100%;
-    min-height: 100%
-}
-
 /* MOBILE PAGE */
 #mobile-page {
-    position: fixed;
-    z-index: 0;
+    display: none;
 }
 
 /* NAVIGATION */
@@ -353,8 +347,14 @@ body {
 /* MOBILE PHONE */
 
     @media screen and (max-width: 768px) {
+
+        #background, #navigation, .cards, #text-intro, #text-goodbye, #empty {
+            display: none;
+        }
         
         #mobile-page {
+            display: inline;
+            position: fixed;
             width: 100%;
             height: 100%;
             overflow-x: hidden;
