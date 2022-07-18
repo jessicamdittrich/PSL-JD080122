@@ -3,15 +3,15 @@ var blinkingScroll = setInterval(function () {
   var scrollElement = document.getElementById("scroll");
   scrollElement.style.visibility =
     scrollElement.style.visibility == "hidden" ? "" : "hidden";
-}, 750);
+}, 1000);
 
 // BACKGROUND IMAGE MOVEMENT
-const el = document.querySelector("#background");
+/*const el = document.querySelector("#background");
 
 el.addEventListener("mousemove", (move) => {
   el.style.setProperty("--x", -move.offsetX + "px");
   el.style.setProperty("--y", -move.offsetY + "px");
-});
+});*/
 
 // MOBILE TOGGLE
 const menuBtn = document.getElementById("menu-button");
