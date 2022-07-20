@@ -419,9 +419,9 @@ body {
             position: absolute;
             top: 0;
             right: 0;
-            padding: 2.5% 5%;
-            font-family: var(--mainfont);
-            font-size: 80px;
+            padding: 5% 5%;
+            font-family: var(--secondfont);
+            font-size: 40px;
             color: black;
             z-index: 1002;
         }
@@ -476,7 +476,7 @@ body {
         }
 
         #mobile-menu #mobile-main-nav .mobile-secondary-nav a {
-            font-size: 20px;
+            font-size: 16px;
             font-style: italic;
             letter-spacing: 2px;
         }
