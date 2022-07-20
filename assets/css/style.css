@@ -33,26 +33,47 @@ body {
     background-position: var(--x) var(--y);
 }
 
-#background div {
+#background #div-one {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #EEEEFF;
+    z-index: 5;
+    opacity: 0;
+    animation: fadeOutOne 5s;
+    -webkit-animation: fadeOutOne 5s;
+    -moz-animation: fadeOutOne 5s;
+    -o-animation: fadeOutOne 5s;
+    -ms-animation: fadeOutOne 5s;
+}
+
+@keyframes fadeOutOne {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
+#background #div-two {
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: #E2ECFF;
-    z-index: 5;
+    z-index: 6;
     opacity: 0;
-    animation: fadeOut 5s;
-    -webkit-animation: fadeOut 5s;
-    -moz-animation: fadeOut 5s;
-    -o-animation: fadeOut 5s;
-    -ms-animation: fadeOut 5s;
+    animation: fadeOutTwo 7s;
+    -webkit-animation: fadeOutTwo 7s;
+    -moz-animation: fadeOutTwo 7s;
+    -o-animation: fadeOutTwo 7s;
+    -ms-animation: fadeOutTwo 7s;
 }
 
-@keyframes fadeOut {
+@keyframes fadeOutTwo {
     0% { opacity: 1; }
     100% { opacity: 0; }
-  }
+}
 
 /* MOBILE PAGE */
 #mobile-page {
