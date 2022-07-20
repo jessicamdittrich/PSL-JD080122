@@ -56,3 +56,17 @@ function mobileMenuSocial() {
 }
 
 socialBtn.addEventListener("click", mobileMenuSocial);
+
+// SHOW PHOTO OF CHARLIE
+const spanCharlie = document.getElementById("charlie");
+const photoJess = document.getElementById("photo-jess");
+const photoCharlie = document.getElementById("photo-charlie");
+
+spanCharlie.addEventListener('mouseover',function(){
+  photoJess.style.display = "none";
+  photoCharlie.style.display = "inline";
+})
+spanCharlie.addEventListener('mouseleave',function(){
+  photoJess.style.display = "inline";
+  photoCharlie.style.display = "none";
+})

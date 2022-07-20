@@ -251,10 +251,14 @@ body {
     z-index: 500;
 }
 
-#card-about #photo-jess{
+#card-about #photo-jess, #card-about #photo-charlie{
     max-width: 25%;
     border: 6px solid black;
     border-radius: 50%;
+}
+
+#card-about #photo-charlie {
+    display: none;
 }
 
 #card-about #photo-jess:hover {
