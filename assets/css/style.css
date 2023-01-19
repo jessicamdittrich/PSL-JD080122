@@ -76,7 +76,7 @@ body {
 }
 
 /* MOBILE PAGE */
-#mobile-page {
+#mobile-page, #mobile-menu {
     display: none;
 }
 
@@ -320,9 +320,10 @@ body {
 #indv-nav ul li a {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
-#indv-nav ul li a:hover{
+#indv-nav ul li a:hover {
     font-style: italic;
 }
 
@@ -354,20 +355,6 @@ body {
     word-spacing: 5px;
 }
 
-#indv-work h6 a {
-    color: black;
-    font-size: 20px;
-    font-weight: 100;
-    font-style: italic;
-    text-decoration: none;
-    display: none;
-}
-
-#indv-work h6 a:hover {
-    color: white;
-    font-style: normal;
-}
-
 #indv-work #indv-text {
     width: 60%;
     margin: auto;
@@ -390,25 +377,44 @@ body {
     margin-top: 25px !important;
 }
 
+.bottom-site-link {
+    margin: 50px 0;
+}
+
+.bottom-site-link a {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bottom-site-link a:hover {
+    color: white;
+}
+
 /* MOBILE PHONE */
 
     @media screen and (max-width: 768px) {
+
+        /* HOME PAGE */
 
         #background, #navigation, .cards, #text-intro, #text-goodbye, #empty {
             display: none;
         }
         
-        #mobile-page {
+        #mobile-page, #mobile-menu {
             display: inline;
             position: fixed;
             width: 100%;
             height: 100%;
             overflow-x: hidden;
-            overflow-y: hidden;
+            /*overflow-y: hidden;*/
             z-index: 1000;
         }
 
         #mobile-background {
+            background-color: rgba(255, 249, 222, .95);
             position: fixed;
             min-width: 100%;
             min-height: 100%;
@@ -423,11 +429,44 @@ body {
             position: absolute;
             top: 0;
             right: 0;
-            padding: 5% 5%;
+            padding: 13% 5%;
             font-family: var(--secondfont);
-            font-size: 40px;
+            text-align: center;
             color: black;
             z-index: 1002;
+        }
+
+        #mobile-content img {
+            max-width: 50%;
+            border: 6px solid black;
+            border-radius: 50%;
+        }
+
+        #mobile-content h1 {
+            font-size: 26px;
+            text-align: left;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            line-height: 40px;
+            padding: 25px;
+            border-top: 5px solid black;
+            border-bottom: 5px solid black;
+        }
+
+        #mobile-content p {
+            font-size: 22px;
+            letter-spacing: .5px;
+            line-height: 30px;
+            text-align: justify;
+        }
+
+        #mobile-content p a {
+            font-size: 20px;
+            color: black;
+            letter-spacing: 0;
+            text-shadow: 2px 2px white;
+            text-decoration: none;
+            text-transform: uppercase;
         }
 
         #mobile-menu {
@@ -443,6 +482,7 @@ body {
 
         #mobile-menu button {
             margin-top: 14px;
+            padding: 0 50px;
             font-family: var(--secondfont);
             font-size: 25px;
             text-transform: uppercase;
@@ -450,6 +490,11 @@ body {
             color: white;
             background: black;
             border: none;
+        }
+
+        #mobile-menu button a {
+            color: white;
+            text-decoration: none;
         }
 
         #mobile-menu #mobile-main-nav {
@@ -487,6 +532,47 @@ body {
 
         #mobile-menu #mobile-main-nav #mobile-portfolio-nav, #mobile-menu #mobile-main-nav #mobile-social-nav {
             display: none;
+        }
+
+        /* INDIVIDUAL PAGES */
+
+        body {
+            background-color: rgba(255, 249, 222, .95);
+        }
+
+        #indv-nav {
+            display: none;
+        }
+
+        #indv-work {
+            position: absolute;
+            width: 90%;
+            top: 3%;
+            left: 5%;
+        }
+
+        #indv-work h2 {
+            margin-bottom:15px;
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        #indv-work h4 {
+            margin-bottom: 0;
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        #indv-work #indv-text {
+            width: 100%;
+        }
+        
+        #indv-work #indv-photos{
+            width: 100%;
+        }
+
+        #indv-text p {
+            font-size: 20px;
         }
 
     }
