@@ -265,6 +265,17 @@ body {
     cursor: url(../images/cursor-hi.png), pointer;
 }
 
+#card-about p a {
+    color: black;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#card-about p a:hover {
+    color: white;
+}
+
 #card-one {
     top: 3000px;
     left: 13%;
@@ -377,6 +388,10 @@ body {
     margin-top: 25px !important;
 }
 
+.top-site-link {
+    display: none;
+}
+
 .bottom-site-link {
     margin: 50px 0;
 }
@@ -449,6 +464,7 @@ body {
             letter-spacing: 2px;
             line-height: 40px;
             padding: 25px;
+            text-shadow: 5px 5px whitesmoke;
             border-top: 5px solid black;
             border-bottom: 5px solid black;
         }
@@ -574,6 +590,28 @@ body {
         #indv-text p {
             font-size: 20px;
         }
+
+        .top-site-link {
+            display:block;
+            margin: 25px 0 40px 0;
+        }
+
+        .top-site-link a {
+            color: white;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 15px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .bottom-site-link {
+            display: none;
+        }
+
 
     }
 
