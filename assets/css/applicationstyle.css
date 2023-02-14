@@ -150,7 +150,7 @@ body {
     z-index: 200;
 }
 
-.cards h3, #text-intro h3, #text-goodbye h3 {
+.cards h3 {
     margin: 20px 0 20px 0;
     font-size: 24px;
     letter-spacing: 3px;
@@ -298,8 +298,9 @@ body {
         }
 
         #navigation {
-            top: 10%;
+            top: 15%;
             width: 100%;
+            left: 0;
         }
 
         #navigation h1 {
@@ -313,14 +314,14 @@ body {
             font-size: 24px;
             font-style: normal;
             letter-spacing: 5px;
-            line-height: 30px;
+            line-height: 45px;
         }
         
         #navigation ul {
             position: fixed;
             top: 0;
             margin-top: 0;
-            padding: 10px;
+            padding: 10px 0;
             width: 100%;
             background-color: black;
         }
@@ -338,17 +339,47 @@ body {
         }
         
         #navigation ul li, #navigation ul li a{
-            font-size: 15px;
+            font-size: 14px;
             color: white;
         }
 
         .cards, #card-about {
             width: 80%;
-            left: 5%;
+            left: 4%;
+            padding: 5%;
         }
         
         #card-about #photo-jess{
             max-width: 50%;
+        }
+
+        .cards h3:last-child {
+            font-size: 10px;
+            line-height: 15px;
+        }
+
+        #card-one {
+            top: 2000px;
+        }
+        
+        #card-two {
+            top: 3550px;
+        }
+        
+        #card-three {
+            top: 5100px;
+        }
+        
+        #card-four {
+            top: 6200px;
+        }
+        
+        #card-five {
+            top: 6900px;
+        }
+
+        #empty {
+            top: 7300px;
         }
 
         .btn-shine {
@@ -366,10 +397,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 480px;
+              background-position: 380px;
             }
             100% {
-              background-position: 480px;
+              background-position: 380px;
             }
           }
           @-webkit-keyframes shine {
@@ -377,10 +408,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 480px;
+              background-position: 380px;
             }
             100% {
-              background-position: 480px;
+              background-position: 380px;
             }
           }
           @-o-keyframes shine {
@@ -388,10 +419,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 480px;
+              background-position: 380px;
             }
             100% {
-              background-position: 480px;
+              background-position: 380px;
             }
           }
           @keyframes shine {
@@ -399,10 +430,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 480px;
+              background-position: 380px;
             }
             100% {
-              background-position: 480px;
+              background-position: 380px;
             }
           }
 
