@@ -298,7 +298,7 @@ body {
         }
 
         #navigation {
-            top: 15%;
+            top: 10%;
             width: 100%;
             left: 0;
         }
@@ -315,7 +315,7 @@ body {
             font-size: 28px;
             font-style: normal;
             letter-spacing: 5px;
-            line-height: 45px;
+            line-height: 40px;
         }
         
         #navigation ul {
@@ -398,10 +398,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 380px;
+              background-position: 420px;
             }
             100% {
-              background-position: 380px;
+              background-position: 420px;
             }
           }
           @-webkit-keyframes shine {
@@ -409,10 +409,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 380px;
+              background-position: 420px;
             }
             100% {
-              background-position: 380px;
+              background-position: 420px;
             }
           }
           @-o-keyframes shine {
@@ -420,10 +420,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 380px;
+              background-position: 420px;
             }
             100% {
-              background-position: 380px;
+              background-position: 420px;
             }
           }
           @keyframes shine {
@@ -431,10 +431,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 380px;
+              background-position: 420px;
             }
             100% {
-              background-position: 380px;
+              background-position: 420px;
             }
           }
 
