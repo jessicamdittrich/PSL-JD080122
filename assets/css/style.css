@@ -444,7 +444,7 @@ body {
             position: absolute;
             top: 0;
             right: 0;
-            padding: 13% 5%;
+            padding: 15% 5%;
             font-family: var(--secondfont);
             text-align: center;
             color: black;
@@ -465,8 +465,8 @@ body {
             line-height: 40px;
             padding: 25px;
             text-shadow: 5px 5px whitesmoke;
-            border-top: 5px solid black;
-            border-bottom: 5px solid black;
+            border-top: 4px solid black;
+            border-bottom: 4px solid black;
         }
 
         #mobile-content p {
@@ -491,6 +491,7 @@ body {
             height: 50px;
             top: 0;
             right: 0;
+            padding-top: 2px;
             text-align: center;
             background-color: black;
             z-index: 1003;
@@ -593,7 +594,7 @@ body {
 
         .top-site-link {
             display:block;
-            margin: 25px 0 40px 0;
+            margin: 30px 0 40px 0;
         }
 
         .top-site-link a {
@@ -609,7 +610,8 @@ body {
         }
 
         .bottom-site-link {
-            display: none;
+            visibility: hidden;
+            margin: 0;
         }
 
 
