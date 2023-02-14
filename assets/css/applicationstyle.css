@@ -398,10 +398,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 420px;
+              background-position: 390px;
             }
             100% {
-              background-position: 420px;
+              background-position: 390px;
             }
           }
           @-webkit-keyframes shine {
@@ -409,10 +409,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 420px;
+              background-position: 390px;
             }
             100% {
-              background-position: 420px;
+              background-position: 390px;
             }
           }
           @-o-keyframes shine {
@@ -420,10 +420,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 420px;
+              background-position: 390px;
             }
             100% {
-              background-position: 420px;
+              background-position: 390px;
             }
           }
           @keyframes shine {
@@ -431,10 +431,10 @@ body {
               background-position: 0;
             }
             60% {
-              background-position: 420px;
+              background-position: 390px;
             }
             100% {
-              background-position: 420px;
+              background-position: 390px;
             }
           }
 
