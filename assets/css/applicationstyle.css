@@ -289,13 +289,17 @@ body {
 
     @media screen and (max-width: 768px) {
 
+        body {
+            background-color: #E2ECFF;
+        }
+
         #background {
-            width: 200%;
-            height: 200%;
+            display: none;
         }
 
         #navigation {
             top: 10%;
+            width: 100%;
         }
 
         #navigation h1 {
